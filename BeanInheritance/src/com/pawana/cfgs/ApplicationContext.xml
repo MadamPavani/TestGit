@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="base" class="com.pawana.model.Bike">
+	<property name="company" value="Honda"/>
+	<property name="capacity" value="300"/>
+
+</bean>
+
+<bean id="bike1" class="com.pawana.model.Bike" parent="base">
+	<property name="id" value="AP123"></property>
+</bean>
+<bean id="bike2" class="com.pawana.model.Bike" parent="base">
+	<property name="id" value="TS456"></property>
+</bean>
+</beans>
